@@ -1,0 +1,108 @@
+body{
+  background-color: darkslategray;
+}
+#container{
+  width: 98%;
+  margin: auto;
+  background-color: yellow;
+}
+#nav_flex{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#header_image img{
+  display: block;
+  max-width: 100%;
+}
+section img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+ul li{
+  list-style-type: none;
+  background-color: deeppink;
+}
+li a{
+  display: block;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: helvetica;
+  font-weight: bolder;
+  padding: 5px 25px 5px 25px;
+  text-align: center;
+}
+li a:link{
+  color: lawngreen;
+}
+li a:visited{
+  color: lawngreen;
+}
+li a:hover{
+  color: lightcyan;
+}
+li:hover{
+  background-color: hotpink;
+}
+h1{
+  font-family: helvetica;
+  background-color: hotpink;
+  margin-top: 0;
+  color: royalblue;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 48px;
+  border-radius: 15px 15px 0 0;
+}
+#flex_main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-around;
+}
+#flex_main section{
+  border: 2px ridge deeppink;
+  border-radius: 15px;
+  margin: 5px 3px 5px 3px;
+  flex-basis: 100%;
+  flex-grow: 1
+}
+p{
+  padding: 0 30px 10px 30px;
+  text-align: justify;
+  font-family: arial;
+  text-indent: 30px;
+}
+P::first-letter{
+  font-size: 20px;
+  color: hotpink;
+}
+footer div{
+  text-align: center;
+  font-size: 24px;
+  background-color: deeppink;
+  padding: 20px 0 20px 0;
+}
+@media screen and (min-width:600px) {
+  #nav_flex{
+    flex-direction: row;
+  }
+  #nav_flex li{
+    flex-grow: 1;
+  }
+  #skip_content{
+    display: none;
+  }
+  #flex_main section{
+    flex-basis: 40%;
+  }
+}
+@media screen and (min-width:1050px) {
+  #skip_content{
+    display: none;
+  }
+  #flex_main section{
+    flex-basis: 30%;
+  }
+}
